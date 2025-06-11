@@ -219,6 +219,27 @@ body {
     font-size: 1.2rem;
 }
 
+.contact-info {
+    text-align: left;
+    max-width: 500px;
+    margin: 1.5rem auto;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.contact-info p {
+    margin: 0.8rem 0;
+    font-size: 1.05rem;
+}
+
+.contact-info strong {
+    color: var(--primary);
+    min-width: 140px;
+    display: inline-block;
+}
+
 .map-container {
     margin-top: 2rem;
     border-radius: 10px;
