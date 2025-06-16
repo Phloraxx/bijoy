@@ -246,12 +246,27 @@ html, body {
     overflow: hidden;
     padding: 1rem;
     box-sizing: border-box;
+    position: relative;
+    max-width: 540px;
+    margin: 0 auto;
 }
 
 .instagram-media {
     max-width: 100% !important;
     width: 100% !important;
     margin: 0 auto !important;
+    min-width: 320px !important;
+}
+
+@media (max-width: 767px) {
+    .instagram-wrapper {
+        padding: 0.5rem;
+        overflow-x: auto;
+    }
+    
+    .instagram-media {
+        min-width: 280px !important;
+    }
 }
 
 /* Footer */
