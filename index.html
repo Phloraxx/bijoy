@@ -4,100 +4,134 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dr. Bijoykumar P.K - Physician & Diabetologist</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
     <!-- Mobile Top Bar - Always Visible -->
-    <div class="mobile-top-bar">
-        <div class="top-bar-item hours">4:30-7:00 PM</div>
-        <div class="top-bar-divider">|</div>
-        <a href="tel:+918714886528" class="top-bar-item phone">Call: +91 8714 886 528</a>
+    <div class="mobile-top-bar bg-primary text-white d-flex justify-content-center align-items-center gap-3 py-2">
+        <div class="d-flex align-items-center gap-1">4:30-7:00 PM</div>
+        <div>|</div>
+        <a href="tel:+918714886528" class="text-white text-decoration-none fw-semibold">Call: +91 8714 886 528</a>
     </div>
     
     <!-- Hero Section -->
-    <header class="hero">
+    <header class="hero d-flex flex-column flex-md-row justify-content-around align-items-center text-center text-md-start animate-on-scroll">
         <div class="hero-content">
-            <h1>Dr. Bijoykumar P.K</h1>
-            <h2>MBBS, MD - Physician & Diabetologist</h2>
-            <a href="tel:+918714886528" class="cta-button">Book Appointment</a>
+            <h1 class="display-4 fw-bold">Dr. Bijoykumar P.K</h1>
+            <h2 class="fs-3 fw-light mb-4">MBBS, MD - Physician & Diabetologist</h2>
+            <a href="tel:+918714886528" class="cta-button btn btn-light btn-lg text-primary fw-semibold">Book Appointment</a>
         </div>
-        <div class="hero-image">
-            <img src="assets/doctor-image.jpg" alt="Dr. Bijoykumar P.K">
+        <div class="hero-image mt-4 mt-md-0">
+            <img src="assets/doctor-image.jpg" alt="Dr. Bijoykumar P.K" class="img-fluid rounded-circle border border-5 border-white shadow">
         </div>
     </header>
 
     <!-- About Section -->
-    <section id="about" class="section">
-        <h2>About Dr. Bijoykumar</h2>
-        <div class="content">
-            <p>Dr. Bijoykumar P.K is a highly qualified physician and diabetologist with MBBS and MD degrees. With years of experience in managing diabetes and related conditions, Dr. Bijoykumar provides comprehensive care using evidence-based approaches.</p>
+    <section id="about" class="section py-5 animate-on-scroll">
+        <div class="container">
+            <h2 class="text-center mb-4">About Dr. Bijoykumar</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <p class="lead">Dr. Bijoykumar P.K is a highly qualified physician and diabetologist with MBBS and MD degrees. With years of experience in managing diabetes and related conditions, Dr. Bijoykumar provides comprehensive care using evidence-based approaches.</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="section">
-        <h2>Our Services</h2>
-        <div class="services-container">
-            <div class="service-card">
-                <h3>Diabetes Management</h3>
-                <p>Comprehensive care for Type 1, Type 2, and gestational diabetes</p>
-            </div>
-            <div class="service-card">
-                <h3>General Medicine</h3>
-                <p>Treatment for common illnesses and chronic conditions</p>
-            </div>
-            <div class="service-card">
-                <h3>Preventive Care</h3>
-                <p>Health screenings and lifestyle counseling</p>
+    <section id="services" class="section bg-light py-5 animate-on-scroll">
+        <div class="container">
+            <h2 class="text-center mb-4">Our Services</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="service-card p-4">
+                        <h3 class="h4 mb-3">Diabetes Management</h3>
+                        <p>Comprehensive care for Type 1, Type 2, and gestational diabetes</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card p-4">
+                        <h3 class="h4 mb-3">General Medicine</h3>
+                        <p>Treatment for common illnesses and chronic conditions</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card p-4">
+                        <h3 class="h4 mb-3">Preventive Care</h3>
+                        <p>Health screenings and lifestyle counseling</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Consultation Hours -->
-    <section id="hours" class="section">
-        <h2>Consultation Hours</h2>
-        <div class="hours-container">
-            <div class="hours-card">
-                <p><strong>Monday - Saturday:</strong> 4:30 PM - 7:00 PM</p>
-                <p><strong>Sunday:</strong> Closed</p>
-                <div class="status-indicator open">Currently Open</div>
+    <section id="hours" class="section py-5 animate-on-scroll">
+        <div class="container">
+            <h2 class="text-center mb-4">Consultation Hours</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="hours-card p-4">
+                        <p class="mb-2"><strong>Monday - Saturday:</strong> 4:30 PM - 7:00 PM</p>
+                        <p class="mb-3"><strong>Sunday:</strong> Closed</p>
+                        <div class="status-indicator open">Currently Open</div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="section">
-        <h2>Contact & Booking</h2>
-        <div class="contact-container">
-            <div class="contact-info">
-                <p><strong>Address:</strong> Main Road, Alathur</p>
-                <p><strong>Booking No:</strong> <a href="tel:+918714886528">+91 8714 886 528</a></p>
-                <p><strong>Booking Time:</strong> 9.30 AM to 6.00 PM</p>
-            </div>
-            
-            <div class="map-container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d265.1748417809659!2d76.5445713931231!3d10.64612580453835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba80b7eea16d597%3A0xef0eaa793766d581!2sJGWV%2BFRG%2C%20Alathur%2C%20Kerala%20678541!5e1!3m2!1sen!2sin!4v1749560339850!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <section id="contact" class="section bg-light py-5 animate-on-scroll">
+        <div class="container">
+            <h2 class="text-center mb-4">Contact & Booking</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="contact-info p-4 mb-4 mb-md-0">
+                        <p class="mb-3"><strong>Address:</strong> Main Road, Alathur</p>
+                        <p class="mb-3"><strong>Booking No:</strong> <a href="tel:+918714886528" class="text-decoration-none">+91 8714 886 528</a></p>
+                        <p class="mb-0"><strong>Booking Time:</strong> 9.30 AM to 6.00 PM</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="map-container shadow-lg">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d265.1748417809659!2d76.5445713931231!3d10.64612580453835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba80b7eea16d597%3A0xef0eaa793766d581!2sJGWV%2BFRG%2C%20Alathur%2C%20Kerala%20678541!5e1!3m2!1sen!2sin!4v1749560339850!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Social Media Section -->
-    <section id="social" class="section">
-        <h2>Follow Us</h2>
-        <div class="social-container">
-            <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/DIywCN7SZHq/?utm_source=ig_embed&utm_campaign=loading" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
-                <!-- Instagram embed content -->
-            </blockquote>
+    <section id="social" class="section py-5 animate-on-scroll">
+        <div class="container">
+            <h2 class="text-center mb-4">Follow Us</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="social-container">
+                        <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/DIywCN7SZHq/?utm_source=ig_embed&utm_campaign=loading" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+                            <!-- Instagram embed content -->
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer>
-        <p>© 2025 Dr. Bijoykumar P.K. All rights reserved.</p>
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p class="mb-0">© 2025 Dr. Bijoykumar P.K. All rights reserved.</p>
+        </div>
     </footer>
 
     <script async src="https://www.instagram.com/embed.js"></script>
-
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="scripts/app.js"></script>
 </body>
 </html>
