@@ -1,11 +1,11 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Initialize Bootstrap components
+    
     const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
     const tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
         return new bootstrap.Tooltip(tooltipTriggerEl);
     });
 
-    // Scroll animations
+    
     const animatedElements = document.querySelectorAll('.animate-on-scroll');
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
@@ -20,16 +20,27 @@ document.addEventListener('DOMContentLoaded', function() {
 
     animatedElements.forEach(element => {
         observer.observe(element);
-    });
+    });    
+    function handleInstagramEmbed() {
+        if (window.instgrm) {
+            window.instgrm.Embeds.process();
+        }
+    }
 
-    // Update open/closed status
+    
+    handleInstagramEmbed();
+    
+    
+    setTimeout(handleInstagramEmbed, 2000);
+
+    
     function updateClinicStatus() {
         const now = new Date();
         const currentDay = now.getDay();
         const currentHour = now.getHours();
         const currentMinute = now.getMinutes();
         
-        // Clinic hours: 4:30 PM to 7:00 PM (16:30 to 19:00)
+        
         const openingHour = 16;
         const openingMinute = 30;
         const closingHour = 19;
@@ -47,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
             statusElement.classList.toggle('closed', !isOpen);
         }
 
-        // Highlight current day in schedule using Bootstrap classes
+        
         const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
         const currentDayName = days[currentDay];
         const dayElements = document.querySelectorAll('.hours-card p');
@@ -61,11 +72,11 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Initialize and update every minute
+    
     updateClinicStatus();
     setInterval(updateClinicStatus, 60000);
 
-    // Service card interactions
+    
     const serviceCards = document.querySelectorAll('.service-card');
     serviceCards.forEach(card => {
         card.addEventListener('mouseenter', () => {
@@ -77,7 +88,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Smooth scroll for anchor links
+    
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
